@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', cursive;
+    background-image: url('https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.count-down{
+    text-align: center;
+}
+
+.count-down h1{
+    color: #ffffff;
+    font-size: 100px;
+}
+
+.timer{
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.time{
+    margin-right: 200px;
+}
+
+.time:nth-child(4){
+    margin-right: 0;
+}
+
+
+.time p:nth-child(1){
+    font-size: 100px;
+    margin-bottom: 0;
+}
+
+footer{
+    margin-top: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+footer a{
+    color: #ffff;
+}
+
+footer a:hover{
+    color: #ff0000;
+}
+
+
