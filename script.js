@@ -6,10 +6,11 @@ const seconds = document.getElementById('seconds');
 
 setInterval(updateCountdownTime, 1000);
 
-let target = new Date(`December 01 ${new Date().getFullYear()} 00:00:00`)
+let date = 'December 01'
+let target = new Date(`${date} ${new Date().getFullYear()} 00:00:00`)
 
 if(target <= new Date()){
-    target = new Date(`December 01 ${new Date().getFullYear()+1} 00:00:00`);
+    target = new Date(`${date} ${new Date().getFullYear()+1} 00:00:00`);
 }
 
 function updateCountdownTime(){
