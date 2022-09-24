@@ -5,7 +5,7 @@ const seconds = document.getElementById('seconds');
 
 const audio = document.getElementById("audio");
 
-loadSong("Alan Walker - Faded");
+loadSong("Luxury SA - Crazy Vibes");
 document.body.addEventListener("mousemove", function () {
     playSong();
 })
