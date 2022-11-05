@@ -20,6 +20,8 @@ if(target <= new Date()){
     target = new Date(`${date} ${new Date().getFullYear()+1} 00:00:00`);
 }
 
+displayDate();
+
 function updateCountdownTime(){
     const currentDate = new Date();
     const difference = target - currentDate;
@@ -45,4 +47,9 @@ function loadSong(song){
 
 function playSong(){
     audio.play();
+}
+
+function displayDate(){
+    let date = `${target.getDate().toString().padStart(2, '0')}/${target.getMonth() + 1 }/${target.getFullYear()}`;
+    document.getElementById("date").innerHTML = date;
 }
