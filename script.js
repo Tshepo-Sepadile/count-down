@@ -3,14 +3,6 @@ const hours = document.getElementById('hours');
 const minutes = document.getElementById('minutes');
 const seconds = document.getElementById('seconds');
 
-const audio = document.getElementById("audio");
-
-loadSong("Luxury SA - Crazy Vibes");
-document.body.addEventListener("mousemove", function () {
-    playSong();
-})
-
-
 setInterval(updateCountdownTime, 1000);
 
 let date = 'December 01'
@@ -39,14 +31,6 @@ function updateCountdownTime(){
 
 function formatDate(value){
     return value.toString().padStart(2, '0');
-}
-
-function loadSong(song){
-    audio.src = `music/${song}.mp3`;
-}
-
-function playSong(){
-    audio.play();
 }
 
 function displayDate(){
