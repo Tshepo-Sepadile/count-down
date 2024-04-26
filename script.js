@@ -19,7 +19,7 @@ if(target <= new Date()){
     target = new Date(`${date} ${new Date().getFullYear()+1} 00:00:00`);
 }
 
-displayDate();
+addCurrentYearToHeading();
 
 function updateCountdownTime(){
     const currentDate = new Date();
