@@ -3,6 +3,13 @@ const hours = document.getElementById('hours');
 const minutes = document.getElementById('minutes');
 const seconds = document.getElementById('seconds');
 
+const audio = document.getElementById("audio");
+
+loadSong("Cartoon, Jéja - On & On (feat. Daniel Levi)");
+document.body.addEventListener("mousemove", function () {
+    playSong();
+})
+
 setInterval(updateCountdownTime, 1000);
 
 let date = 'December 01'
@@ -33,7 +40,15 @@ function formatDate(value){
     return value.toString().padStart(2, '0');
 }
 
-function displayDate(){
-    let date = `${target.getDate().toString().padStart(2, '0')}/${target.getMonth() + 1 }/${target.getFullYear()}`;
-    document.getElementById("date").innerHTML = date;
+function addCurrentYearToHeading(){
+    document.getElementsByTagName('h1')[0].innerHTML += ` ${target.getFullYear()}`;
+}
+
+function loadSong(song){
+    console.log(song)
+    audio.src = `music/${song}.mp3`;
+}
+
+function playSong(){
+    audio.play();
 }
